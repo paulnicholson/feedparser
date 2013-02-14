@@ -1,3 +1,5 @@
+"!https://travis-ci.org/paulnicholson/feedparser.png!":https://travis-ci.org/paulnicholson/feedparser
+
 Simple Feed Parser
 
 A Java-based parser for RSS and Atom web feeds.
@@ -12,18 +14,10 @@ Goals
 
 - small resource footprint without external library dependencies
 
-Build
------
-Building the project jar file requires JDK 1.6.0 and Ant 1.7.0 or later.
-The following command builds the jar file in the dist folder:
-
-    ant clean jar
-
-The feedparser-[version].jar file may be added to the classpath of any Java
-or Android project.
-
 Usage
 -----
+Add to your maven repo and include dependency in your pom.xml
+
 Parsing an input stream for a feed requires the following statements:
 
     FeedParser parser = FeedParserFactory.newParser();
