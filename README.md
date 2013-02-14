@@ -1,4 +1,4 @@
-"!https://travis-ci.org/paulnicholson/feedparser.png!":https://travis-ci.org/paulnicholson/feedparser
+[![Build Status](https://travis-ci.org/paulnicholson/feedparser.png)](https://travis-ci.org/paulnicholson/feedparser)
 
 Simple Feed Parser
 
