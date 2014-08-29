@@ -6,6 +6,7 @@ group 'com.ernieyu'
 version '0.1.0'
 
 apply plugin: 'java'
+apply plugin: 'maven'
 
 sourceCompatibility = 1.6
 targetCompatibility = 1.6
@@ -16,4 +17,13 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version:'4.9'
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: project.hasProperty('repoDir') ? "file://$repoDir" : "file://$buildDir/repo/")
+            pom.artifactId = "feedparser"
+        }
+    }
 }
